@@ -3,20 +3,23 @@ import { MainPage } from '../pages/MainPage/MainPage'
 import { ROUTES } from '../shared/config/routes'
 import { AdvertisementByIdPage } from '../pages/AdvertisementByIdPage/AdvertisementByIdPage'
 import { StatsPage } from '../pages/StatsPage/StatsPage'
+import { Layout } from './Layout'
+import { ThemeProvider } from './providers/ThemeProvider/ThemeProvider'
 import '../shared/styles/index.scss'
-import { Layout } from './layout'
 
 export const App = () => {
   return (
-     <BrowserRouter>
-      <Routes>
-        <Route element={<Layout/>}>
-            <Route path={ROUTES.ROOT} element={<Navigate to={ROUTES.LIST} replace />} />
-            <Route path={ROUTES.LIST} element={<MainPage />} index/>
-            <Route path={ROUTES.SELECTED_AD} element={<AdvertisementByIdPage />} />
-            <Route path={ROUTES.STATS} element={<StatsPage />}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout/>}>
+              <Route path={ROUTES.ROOT} element={<Navigate to={ROUTES.LIST} replace />} />
+              <Route path={ROUTES.LIST} element={<MainPage />} index/>
+              <Route path={ROUTES.SELECTED_AD} element={<AdvertisementByIdPage />} />
+              <Route path={ROUTES.STATS} element={<StatsPage />}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }

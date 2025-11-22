@@ -2,10 +2,19 @@
     --c-accent: #00aaff;
     --c-white: #ffffff;
     --c-black: #000000;
+    --c-dark: #292929;
     --c-grey: #808080;
+
+    --c-background: var(--c-white);
+    --c-foreground: var(--c-dark);
 
     --font-family: 'Manrope';
 
     --container-width: 1320px;
     --container-padding-x: 15px;
+}
+
+body[data-theme='dark-mode'] {
+    --c-background: var(--c-dark);
+    --c-foreground: var(--c-white);
 }
