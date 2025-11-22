@@ -1,5 +1,5 @@
+import { type Theme, THEME } from "@shared/types/theme.types";
 import { createContext } from "react";
-import { THEME, type Theme,  } from "../../../shared/types/theme.types";
 
 interface ThemeContextType {
   theme: Theme;

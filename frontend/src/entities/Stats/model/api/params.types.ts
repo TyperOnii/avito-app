@@ -1,4 +1,4 @@
-import type { Period } from "../../../../shared/types/period.types";
+import type { Period } from "@shared/types/period.types"; 
 
 export interface StatsSummaryQueryParams {
     period?: Period,

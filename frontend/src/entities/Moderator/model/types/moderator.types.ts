@@ -1,4 +1,4 @@
-import type { Permission } from "../../../../shared/types/permissions.types";
+import type { Permission } from "@shared/types/permissions.types"; 
 import type { ModeratorStats } from "./moderatorStats.types";
 
 export interface Moderator {

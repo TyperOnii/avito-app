@@ -1,4 +1,4 @@
-import type { Category } from "../../../../shared/types/categories.types";
+import type { Category } from "@shared/types/categories.types" 
 
 export interface Statistics {
     summary: Summary,

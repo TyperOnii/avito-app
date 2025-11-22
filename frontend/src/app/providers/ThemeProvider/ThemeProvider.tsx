@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react"
 import { ThemeContext } from "./context"
-import { THEME, type Theme } from "../../../shared/types/theme.types";
+import { type Theme, THEME } from "@shared/types/theme.types";
 
 interface ThemeProviderProps {
     children: ReactNode

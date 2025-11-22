@@ -1,11 +1,10 @@
+import { ROUTES } from '@shared/config/routes'
+import { AdvertisementByIdPage } from 'pages/AdvertisementByIdPage/AdvertisementByIdPage'
+import { MainPage } from 'pages/MainPage/MainPage'
+import { StatsPage } from 'pages/StatsPage/StatsPage'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { MainPage } from '../pages/MainPage/MainPage'
-import { ROUTES } from '../shared/config/routes'
-import { AdvertisementByIdPage } from '../pages/AdvertisementByIdPage/AdvertisementByIdPage'
-import { StatsPage } from '../pages/StatsPage/StatsPage'
 import { Layout } from './Layout'
 import { ThemeProvider } from './providers/ThemeProvider/ThemeProvider'
-import '../shared/styles/index.scss'
 
 export const App = () => {
   return (
