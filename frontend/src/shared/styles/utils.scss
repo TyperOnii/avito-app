@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: calc(var(--container-width) + 2 * var(--container-padding-x));
+    padding-inline: var(--container-padding-x);
+    margin-inline: auto;
+}
