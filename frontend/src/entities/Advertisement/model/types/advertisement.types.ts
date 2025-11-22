@@ -1,11 +1,11 @@
-import type { Category } from "../../../../shared/types/categories.types";
-import type { Color } from "../../../../shared/types/color.types";
-import type { ConditionStatus } from "../../../../shared/types/conditionStatus.types";
-import type { GuaranteeStatus } from "../../../../shared/types/guaranteeStatus.types";
-import type { PriorityStatus } from "../../../../shared/types/priorityStatus.types";
-import type { RejectionReason } from "../../../../shared/types/rejectionReason.types";
-import type { Status } from "../../../../shared/types/status.types";
-import type { Seller } from "../../../Seller";
+import type { Seller } from "@/entities/Seller";
+import type { Category } from "@/shared/types/categories.types";
+import type { Color } from "@/shared/types/color.types";
+import type { ConditionStatus } from "@/shared/types/conditionStatus.types";
+import type { GuaranteeStatus } from "@/shared/types/guaranteeStatus.types";
+import type { PriorityStatus } from "@/shared/types/priorityStatus.types";
+import type { RejectionReason } from "@/shared/types/rejectionReason.types";
+import type { Status } from "@/shared/types/status.types";
 
 export interface Advertisement {
     id: number,

@@ -1,4 +1,4 @@
-import type { Status } from "@shared/types/status.types"; 
+import type { Status } from "@/shared/types/status.types"; 
 
 export interface AdvertisementsQueryParams {
     page?: number,
