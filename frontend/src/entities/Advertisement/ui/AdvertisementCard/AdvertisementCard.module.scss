@@ -1,0 +1,51 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 100%;
+}
+
+.image {
+    border-radius: 6px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    padding: 15px; 
+    flex: 1 1 auto;
+}
+
+.title {
+    margin-bottom: 6px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    margin-bottom: 15px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.grey {
+    color: grey;
+}
+
+.button {
+    margin-top: auto !important;
+}

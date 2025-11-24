@@ -1,0 +1,37 @@
+.header {
+    padding-block: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--c-dark);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.active {
+    color: var(--c-hover);
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & > li {
+        transition: color 0.2s ease-in;
+        &:hover {
+            color: var(--c-hover);
+        }
+        & > a {
+            padding: 5px 10px;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export { ViewAdvertisement } from './ui/ViewAdvertisement'

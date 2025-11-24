@@ -1,0 +1,17 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 12px;
+
+    &Input {
+        display: flex;
+        gap: 20px;
+    }
+}

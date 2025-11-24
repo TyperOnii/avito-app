@@ -1,2 +1,5 @@
 export * from './model/types/advertisement.types'
 export * from './model/api/routes'
+export * from './utils/wordCorrector'
+export { AdvertisementCard } from './ui/AdvertisementCard/AdvertisementCard'
+export { AdvertisementsList } from './ui/AdvertisementsList/AdvertisementsList'

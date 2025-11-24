@@ -1,0 +1,17 @@
+@use '@/shared/styles/media.scss';
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(33%, min-content));
+    gap: 12px;
+
+    @include media.tablet {
+        grid-template-columns: repeat(2, minmax(50%, min-content));
+        gap: 8px;
+    }
+
+    @include media.mobile {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+    }
+}

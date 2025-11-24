@@ -8,6 +8,10 @@ export interface AdvertisementsQueryParams {
     minPrice?: number,
     maxPrice?: number,
     search?: string,
-    sortBy?: 'createdAt' | 'price' | 'priority',
-    sortOrder?: 'asc' | 'desc',
+    sortBy?: SortByAdvertisements,
+    sortOrder?: SortOrderAdvertisements,
 }
+
+export type SortByAdvertisements = 'createdAt' | 'price' | 'priority'
+
+export type SortOrderAdvertisements = 'asc' | 'desc'
