@@ -29,7 +29,7 @@ export const AdvertisementCard = (props: AdvertisementCardProps) => {
                 <div className={s.info}>
                     <div>Цена: {ad.price}₽</div>
                     <div>Категория: {ad.category}</div>
-                    <div>Дата создания: {dateTransform(ad.createdAt)}</div>
+                    <div>Дата создания: {dateTransform(ad.createdAt).date}</div>
                     <div>Статус: <span className={statusStyle}><b>{mapStatusToRussian(ad.status)}</b></span></div>
                     <div>Приоритет: <b>{mapPriorityStatusToRussian(ad.priority)}</b></div>
                 </div>

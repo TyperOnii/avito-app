@@ -1,0 +1,13 @@
+.cell {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}

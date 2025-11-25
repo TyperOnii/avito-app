@@ -1,2 +1,5 @@
 export * from './model/types/stats.types'
 export * from './model/api/routes'
+export { StatsMetricsCard } from './ui/StatsMetricsCard/StatsMetricsCard'
+export { StatsPieChart } from './ui/StatsPieChart/StatsPieChart'
+export { StatsMetricsByCategories } from './ui/StatsMetricsByCategories/StatsMetricsByCategories'

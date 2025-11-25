@@ -1,0 +1,28 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.percentage {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reviewed {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    text-align: center;
+}

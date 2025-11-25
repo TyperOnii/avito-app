@@ -4,7 +4,7 @@ const STATUSES_WITH_TRANSLATE = {
     PENDING: 'в ожидании',
     APPROVED: 'одобрен',
     REJECTED: 'отклонен',
-    DRAFT: 'в модерации',
+    DRAFT: 'на доработке',
 } as const
 
 type StatusTranslatedOnRussian = typeof STATUSES_WITH_TRANSLATE[keyof typeof STATUSES_WITH_TRANSLATE]
