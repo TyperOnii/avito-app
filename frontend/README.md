@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+# Модерация объявлений Авито - Frontend приложение
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Описание
+Frontend приложение для модерации объявлений, построенное по методологии FSD (Feature-Sliced Design). Приложение предоставляет интерфейс для просмотра, одобрения, отклонения и отправки объявлений на доработку.
 
-Currently, two official plugins are available:
+## 🛠 Технологии
+- React 18 - пользовательский интерфейс
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- TypeScript - статическая типизация
 
-## React Compiler
+- Material-UI (MUI) - компоненты и дизайн-система
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- TanStack Query (React Query) - управление серверным состоянием
 
-## Expanding the ESLint configuration
+- React Router - маршрутизация
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- SCSS Modules - стилизация компонентов
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Запуск бэкенд сервера
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd tech-int3-server
+npm install
+npm run dev
 ```
+### Запуск фронтенда
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd frontend
+npm install
+npm run dev
 ```
+## Основной функционал
+
+- Модерация объявлений
+
+- Просмотр списка объявлений с пагинацией
+
+- Одобрение/отклонение объявлений
+
+- Отправка на доработку с указанием причин
+
+- Фильтрация по статусам и категориям
+
+- Поиск и фильтрация
+  
+- Полнотекстовый поиск по объявлениям
+
+- Фильтрация по категориям
+
+- Фильтрация по статусам модерации
+
+- Сортировка по дате и приоритету
+
+- Статистика
+  
+- Круговая диаграмма распределения решений
+
+- График активности за последнюю неделю
+
+- Общая статистика модерации
+
+## Состояние приложения
+Управление состоянием реализовано через:
+
+- TanStack Query - серверное состояние (кеширование, синхронизация)
+
+- React State - локальное состояние компонентов
+
+- URL Search Params - состояние фильтров и пагинации
+
